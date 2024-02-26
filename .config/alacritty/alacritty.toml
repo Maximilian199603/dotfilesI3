@@ -1,0 +1,93 @@
+# $HOME/.config/alacritty/alacritty.toml
+# by Rito Ghosh 2023-10-06
+
+# Alacritty now uses TOML formatting for its config files.
+# This is a simple example.
+
+# There are the specification here: https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd
+# It is not obvious how it translates to TOML. But it is extremely straightforward.
+
+# example: WINDOW, COLORS, etc. are tables, and should be represented as [window], [colors], respectively.
+# specifics of variables go under them. e.g.- look under "dynamic_padding" under-
+# https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd#window
+# write `dynamic_padding = true` (without backticks -`) under the table [window]
+# for variables with multiple values, use "dotted keys". Like setting `padding.x = 5` under [window].
+# This is simple. If not clear, do several trials and errors.
+
+# Below is my initial set-up. The TOML homepage (https://toml.io/en/v1.0.0) was very helpful in figuring this out. 
+# I put the file alacritty.toml in $HOME/.config/alacritty. However it can be kept anywhere among the places mentioned in
+# https://github.com/alacritty/alacritty/tree/master#configuration
+
+[window]
+
+opacity = 0.8
+
+padding.x = 10
+padding.y = 10
+dynamic_padding = true
+
+decorations = "Full"
+decorations_theme_variant = "Dark"#"Light"
+blur = true
+
+[font]
+
+normal.family = "JetBrainsMonoNerdFont"
+bold.family = "JetBrainsMonoNerdFont"
+italic.family = "JetBrainsMonoNerdFont"
+bold_italic.family = "JetBrainsMonoNerdFont"
+
+size = 11.25
+
+[scrolling]
+
+history = 10000
+
+multiplier = 3
+
+[colors]
+[colors.primary]
+foreground = "#f0f3f6"
+
+background = "#0a0c10"
+
+dim_foreground = "#828482"
+
+[colors.cursor] 
+text = "#0a0c10"
+cursor = "#f0f3f6"
+
+[colors.normal]
+black = "#7a828e"
+
+red = "#ff9492"
+
+green = "#26cd4d"
+
+yellow = "#f0b72f"
+
+blue = "#71b7ff"
+
+magenta = "#cb9eff"
+
+cyan = "#39c5cf"
+
+white = "#d9dee3"
+
+
+[colors.bright]
+black = "#9ea7b3"
+
+red = "#ffb1af"
+
+green = "#4ae168"
+
+yellow = "#f7c843"
+
+blue = "#91cbff"
+
+magenta = "#cb9eff"
+
+cyan = "#39c5cf"
+
+white = "#d9dee3"
