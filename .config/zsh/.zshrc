@@ -19,3 +19,7 @@ compinit
 alias ll='ls -alF'
 alias vim='nvim'
 alias try='echo "Testing aliaTesting alias"'
+
+
+eval "$(starship init zsh)"
+#End of File
