@@ -210,7 +210,7 @@ bar {
         status_command i3status --config ~/.i3status.conf
 }
 #Way that gets the random image applies different image per screen
-exec_always shuf -e -n1 $HOME/Pictures/Wallpapers/* | xargs feh --bg-scale
+exec_always shuf -e -n1 $HOME/Pictures/Wallpapers/*{.jpg,.png} | xargs feh --bg-scale
 #Normal Feh way
 #exec_always feh --bg-scale --randomize Pictures/Wallpapers/*"
 exec_always picom
