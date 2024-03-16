@@ -1,0 +1,12 @@
+# Do not include sensitive Data
+/.zshrc-secrets
+
+# ZSH junk
+/.zcompdump
+/.zsh-update
+
+# Postgres
+/.pg*
+
+# History files
+/.*history

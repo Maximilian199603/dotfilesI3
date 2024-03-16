@@ -218,5 +218,5 @@ bar {
 exec_always xrandr --output Virtual-1 --mode 1920x1080
 exec_always picom
 #Way that gets the random image applies different image per screen
-exec_always shuf -e -n1 $HOME/Pictures/Wallpapers/*{.jpg,.png} | xargs feh --bg-scale
+exec_always shuf -e -n1 $HOME/Pictures/Wallpaper/*{.jpg,.png} | xargs feh --bg-scale
 # Add Wallust
