@@ -1,9 +1,10 @@
 # Do not include sensitive Data
-/.zshrc-secrets
+.zshrc-secrets
 
 # ZSH junk
-/.zcompdump
-/.zsh-update
+.zcompdump
+.zsh-update
+.histfile
 
 # Postgres
 /.pg*
