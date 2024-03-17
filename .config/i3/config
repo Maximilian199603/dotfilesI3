@@ -46,7 +46,7 @@ floating_modifier $mod
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
-tiling_drag modifier titlebar
+#tiling_drag modifier titlebar
 
 # start a terminal
 bindsym $mod+Return exec alacritty
@@ -216,7 +216,7 @@ bar {
 }
 
 exec_always xrandr --output Virtual-1 --mode 1920x1080
-#exec_always picom
+exec_always picom
 #Way that gets the random image applies different image per screen
 exec_always shuf -e -n1 $HOME/Pictures/Wallpaper/*{.jpg,.png} | xargs feh --bg-scale
 # Add Wallust
