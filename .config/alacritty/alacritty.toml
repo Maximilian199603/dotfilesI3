@@ -33,8 +33,7 @@ multiplier = 3
 [colors.primary]
 foreground = "#f0f3f6"
 
-#background = "#0a0c10"
-background = "#eb4034"
+background = "#0a0c10"
 dim_foreground = "#828482"
 
 [colors.cursor] 
