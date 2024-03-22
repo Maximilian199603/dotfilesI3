@@ -13,9 +13,6 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-
-
-
 alias ll='ls -alF'
 alias vim='nvim'
 alias try='echo "Testing aliaTesting alias"'
