@@ -62,9 +62,12 @@ bindsym $mod+d exec "rofi -modi drun,run -show drun"
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
+#Does not execute not when pressing mod and w
 #Wifi Menu Rofi
-bindsym $mod+Shift+w exec "rofi-wifi-menu.sh"
+bindsym $mod+w exec "rofi-wifi-menu.sh"
 
+#Executes but cannot find the script
+#Cannot be found
 #PowerMenu Rofi
 bindsym $mod+p exec "rofi -show power-menu -modi power-menu:rofi-power-menu"
 
