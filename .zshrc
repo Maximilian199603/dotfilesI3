@@ -1,5 +1,5 @@
 # Lines configured by zsh-newuser-install
-HISTFILE=~/dotfiles/.config/zsh/.histfile
+HISTFILE=~/dotfiles/.histfile
 HISTSIZE=5000
 SAVEHIST=5000
 setopt autocd beep extendedglob nomatch
