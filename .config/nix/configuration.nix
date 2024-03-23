@@ -68,7 +68,6 @@ in
 	XDG_BIN_HOME = "$Home/.local/bin";
 	Path = [
 	"${XDG_BIN_HOME}"
-	"Hewwo_this_is_a_Test"
 	];
   };
   # Configure console keymap
