@@ -88,6 +88,7 @@ in
     krita
     # Text Processing
     neovim
+    vscode
     # Version Control
     git
     # File Interaction
