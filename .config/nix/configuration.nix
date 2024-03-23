@@ -63,6 +63,13 @@ in
   programs.zsh.enable = true; # enable zsh system wide
   users.defaultUserShell = pkgs.zsh;
 
+  enviroment.sessionVariables = rec {
+  	XDG_CONFIG_HOME = "$HOME/.config";
+	XDG_BIN_HOME = "$Home/.local/bin";
+	Path = [
+	"${XDG_BIN_HOME}"
+	];
+  }
   # Configure console keymap
   console.keyMap = "de";
 
