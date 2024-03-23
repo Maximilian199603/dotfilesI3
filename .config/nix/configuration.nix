@@ -69,7 +69,7 @@ in
 	Path = [
 	"${XDG_BIN_HOME}"
 	];
-  }
+  };
   # Configure console keymap
   console.keyMap = "de";
 
