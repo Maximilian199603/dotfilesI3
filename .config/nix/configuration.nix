@@ -63,7 +63,7 @@ in
   programs.zsh.enable = true; # enable zsh system wide
   users.defaultUserShell = pkgs.zsh;
 
-  enviroment.sessionVariables = rec {
+  environment.sessionVariables = rec {
   	XDG_CONFIG_HOME = "$HOME/.config";
 	XDG_BIN_HOME = "$Home/.local/bin";
 	Path = [
