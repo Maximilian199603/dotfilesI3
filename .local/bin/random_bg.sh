@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Check if the directory path is provided as an argument
 if [ $# -eq 0 ]; then
@@ -28,7 +28,7 @@ random_file=${files[RANDOM % ${#files[@]}]}
 feh --bg-scale "$random_file"
 
 # Set the colour theme
-wallust run "$random_file"
+#wallust run "$random_file"
 
 echo "Background set to: $random_file"
 
