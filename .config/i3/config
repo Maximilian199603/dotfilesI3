@@ -217,11 +217,7 @@ bar {
 }
 
 exec_always xrandr --output Virtual-1 --mode 1920x1080
-#Way that gets the random image applies different image per screen
-#set $wallpaper exec $HOME/.local/bin/randomFromDir.sh $Home/Pictures/Wallpaper 
-#exec_always feh --bg-scale $wallpaper
+#exec_always "$HOME/.local/bin/random_bg.sh"
 exec_always shuf -e -n1 $HOME/Pictures/Wallpaper/*{.jpg,.png} | xargs feh --bg-scale
-# Add Wallust
-
 
 exec_always picom
