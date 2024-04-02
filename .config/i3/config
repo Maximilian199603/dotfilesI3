@@ -67,7 +67,8 @@ bindsym $mod+w exec "$HOME/.local/bin/rofi-wifi-menu.sh"
 
 #Executes but cannot find the script
 #PowerMenu Rofi
-#bindsym $mod+p exec "rofi -show power-menu -modi power-menu:rofi-power-menu"
+bindsym $mod+p exec "rofi -show power-menu -modi power-menu:rofi-power-menu"
+#Bind lockscreen
 bindsym $mod+o exec "i3lock -c 000000"
 
 # change focus
