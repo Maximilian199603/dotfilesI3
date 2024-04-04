@@ -63,7 +63,6 @@ in
 
   programs.zsh.enable = true; # enable zsh system wide
   users.defaultUserShell = pkgs.zsh;
-  programs.zsh.shellInit = "";
 
   # Configure console keymap
   console.keyMap = "de";
@@ -101,7 +100,7 @@ in
     pcmanfm
     # Terminals
     tmux
-    #Shel};l
+    #Shell
     zsh # might conflict with the added option for zsh
     # GUI Enviroment
     picom
@@ -110,6 +109,7 @@ in
     feh
     lxappearance
     wallust
+    i3blocks
     # Gtk Themes
     arc-theme
     # Cursor Themes
@@ -124,7 +124,6 @@ in
     obsidian
     pika-backup
     # In Testing
-    i3blocks
     alejandra
     # Coding
     dotnet-sdk_8
