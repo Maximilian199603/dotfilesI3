@@ -86,9 +86,9 @@ in
     packages = with pkgs; [];
   };
 
-  #environment.variables = {
-  #	PATH = builtins.getEnv "PATH" + ":~/.local/bin";
-  #};
+  environment.variables = {
+  	PATH = builtins.getEnv "PATH" + ":$HOME/.local/bin";
+  };
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
