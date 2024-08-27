@@ -65,10 +65,6 @@ in
 	}
   ];
   services.xserver.windowManager.i3.enable = true;
-  services.xserver.windowManager.i3.extraSessionCommands = "
-  export PATH=$PATH:$HOME/.local/bin
-  # extra commands here
-  ";
   programs.i3lock.enable = true;
   services.picom.enable = true;
 
@@ -90,9 +86,9 @@ in
     packages = with pkgs; [];
   };
 
-  environment.variables = {
-  	PATH = builtins.getEnv "PATH" + ":~/.local/bin";
-  };
+  #environment.variables = {
+  #	PATH = builtins.getEnv "PATH" + ":~/.local/bin";
+  #};
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
