@@ -63,10 +63,10 @@ bindsym $mod+d exec "rofi -modi drun,run -show drun"
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 #Wifi Menu Rofi
-bindsym $mod+w exec "rofi-wifi-menu.sh"
+bindsym $mod+w exec "~/.local/bin/rofi-wifi-menu.sh"
 
 #PowerMenu Rofi
-bindsym $mod+p exec "rofi -show power-menu -modi power-menu:rofi-power-menu"
+bindsym $mod+p exec "rofi -show power-menu -modi power-menu:~/.local/bin/rofi-power-menu"
 
 #Wallpaper switcher Rofi
 #bindsym $mod+shift+w exec placeholder for wall switcher
