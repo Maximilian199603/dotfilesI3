@@ -65,6 +65,10 @@ in
 	}
   ];
   services.xserver.windowManager.i3.enable = true;
+  services.xserver.windowManager.i3.extraSessionCommands = "
+  export PATH=$PATH:$HOME/.local/bin
+  # extra commands here
+  ";
   programs.i3lock.enable = true;
   services.picom.enable = true;
 
