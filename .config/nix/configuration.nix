@@ -48,9 +48,9 @@ in
   };
 
   # Configure keymap in X11
-  services.xserver = {
+  services.xserver.xkb = {
     layout = "de";
-    xkbVariant = "";
+    variant = "";
   };
 
   services.xserver.enable = true;
@@ -111,6 +111,7 @@ in
     pcmanfm
     # Terminals
     tmux
+    alacritty
     #Shell
     zsh # might conflict with the added option for zsh
     # GUI Enviroment
@@ -152,7 +153,7 @@ in
     killall
     inxi
   ] ++ (with unstable-pkgs; [
-    alacritty 
+     
   ]);
 
   nixpkgs.config.permittedInsecurePackages = [
