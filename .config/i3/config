@@ -66,7 +66,7 @@ bindsym $mod+d exec "rofi -modi drun,run -show drun"
 bindsym $mod+w exec "rofi-wifi-menu.sh"
 
 #PowerMenu Rofi
-bindsym $mod+p exec "rofi -show power-menu -modi power-menu:~/.local/bin/rofi-power-menu"
+bindsym $mod+p exec "rofi -show power-menu -modi power-menu:rofi-power-menu"
 
 #Wallpaper switcher Rofi
 #bindsym $mod+shift+w exec placeholder for wall switcher
@@ -222,7 +222,7 @@ bar {
 
 #exec_always xrandr --output Virtual-1 --mode 1920x1080
 #exec_always "$HOME/.local/bin/random_bg.sh"
-exec_always ~/.local/bin/random_bg.sh ~/Pictures/Wallpapers
+exec_always random_bg.sh ~/Pictures/Wallpapers
 #exec_always shuf -e -n1 $HOME/Pictures/Wallpaper/*{.jpg,.png} | xargs feh --bg-scale
 
 exec_always picom
