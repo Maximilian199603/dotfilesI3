@@ -71,6 +71,7 @@ in
   hardware.bluetooth.enable = true; # Enables bluetooth support
   #hardware.bluetooth.powerOnboot = true; # does not work
   services.blueman.enable = true;
+  environment.localBinInPath = true;
 
   programs.zsh.enable = true; # enable zsh system wide
   users.defaultUserShell = pkgs.zsh;
@@ -86,9 +87,9 @@ in
     packages = with pkgs; [];
   };
 
-  environment.variables = {
-  	PATH = builtins.getEnv "PATH" + ":$HOME/.local/bin";
-  };
+  #environment.variables = {
+  #	PATH = builtins.getEnv "PATH" + ":$HOME/.local/bin";
+  #};
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
