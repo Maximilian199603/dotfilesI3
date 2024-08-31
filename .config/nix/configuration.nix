@@ -87,9 +87,6 @@ in
     packages = with pkgs; [];
   };
 
-  #environment.variables = {
-  #	PATH = builtins.getEnv "PATH" + ":$HOME/.local/bin";
-  #};
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -113,6 +110,7 @@ in
     # Terminals
     tmux
     alacritty
+    kitty
     #Shell
     zsh # might conflict with the added option for zsh
     # GUI Enviroment
@@ -172,6 +170,12 @@ in
 	fira-code-symbols
 	nerdfonts
   ];
+
+  environment.variables
+  {
+  	EDITOR = "nvim";
+	TERMINAL = "alacritty";
+  }
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
