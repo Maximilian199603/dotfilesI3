@@ -171,7 +171,7 @@ in
 	nerdfonts
   ];
 
-  environment.variables
+  environment.variables =
   {
   	EDITOR = "nvim";
 	TERMINAL = "alacritty";
