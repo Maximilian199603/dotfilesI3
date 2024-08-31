@@ -174,7 +174,7 @@ in
   environment.variables =
   {
   	EDITOR = "nvim";
-	TERMINAL = "alacritty";
+	TERMINAL = "kitty";
   };
 
   # Some programs need SUID wrappers, can be configured further or are
