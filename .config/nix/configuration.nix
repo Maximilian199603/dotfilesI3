@@ -66,7 +66,7 @@ in
   ];
   services.xserver.windowManager.i3.enable = true;
   programs.i3lock.enable = true;
-  #services.picom.enable = true;
+  services.picom.enable = true;
 
   hardware.bluetooth.enable = true; # Enables bluetooth support
   #hardware.bluetooth.powerOnboot = true; # does not work
