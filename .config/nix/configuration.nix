@@ -72,8 +72,8 @@ in
      backend = "glx";
      blur-method = "dual-kawase";
      blur-strength = 7;
-    }
-  }
+    };
+  };
 
   hardware.bluetooth.enable = true; # Enables bluetooth support
   #hardware.bluetooth.powerOnboot = true; # does not work
