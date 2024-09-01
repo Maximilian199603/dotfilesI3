@@ -225,4 +225,4 @@ bar {
 exec_always random_bg.sh ~/Pictures/Wallpapers
 #exec_always shuf -e -n1 $HOME/Pictures/Wallpaper/*{.jpg,.png} | xargs feh --bg-scale
 
-#exec_always picom
+exec_always picom
