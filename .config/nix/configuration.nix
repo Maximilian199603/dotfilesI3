@@ -19,7 +19,7 @@ in
   boot.loader.grub.device = "/dev/sda";
   boot.loader.grub.useOSProber = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "TheMachine"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
 # Configure network proxy if necessary
@@ -103,16 +103,13 @@ in
     neovim
     # Version Control
     git
-    # File Interaction
-    lf
+    # File Manager
     yazi
-    pcmanfm
     # Terminals
     tmux
-    alacritty
     kitty
     #Shell
-    zsh # might conflict with the added option for zsh
+    zsh 
     # GUI Enviroment
     picom
     rofi
@@ -129,8 +126,6 @@ in
     papirus-icon-theme
     # Web
     firefox
-    #Fonts
-    #nerdfonts # Test if this is needed if fonts are listed separetly
     # Misc
     obsidian
     pika-backup
@@ -144,6 +139,7 @@ in
     stow
     tree
     neofetch
+    fastfetch
     ookla-speedtest
     wget
     bottom
