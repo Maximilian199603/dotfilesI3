@@ -68,11 +68,6 @@ in
   programs.i3lock.enable = true;
   services.picom = {
    enable = true;
-   settings = {
-     backend = "glx";
-     blur-method = "dual-kawase";
-     blur-strength = 7;
-    };
   };
 
   hardware.bluetooth.enable = true; # Enables bluetooth support
