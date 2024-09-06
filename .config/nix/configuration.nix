@@ -121,6 +121,7 @@ in
     lxappearance
     wallust
     i3blocks
+    betterlockscreen
     # Gtk Themes
     arc-theme
     # Cursor Themes
