@@ -2,10 +2,8 @@ configuration {
   display-drun: "Applications:";
   display-window: "Windows:";
   drun-display-format: "{icon} {name}";
-  font: "JetBrainsMono Nerd Font Medium 12.5";
-  modi: "window,run,drun,emoji";
-  show-icons: true;
-  icon-theme: "Papirus";
+  font: "JetBrainsMono Nerd Font Medium 20";
+  modi: "window,run,drun";
 }
 
 @theme "/dev/null"
@@ -47,7 +45,7 @@ element-text {
 }
 
 element-icon {
-  size: 35;
+  size: 0;
   padding: 0 10 0 0;
   background-color: transparent;
 }
@@ -66,7 +64,7 @@ inputbar {
 listview {
   background-color: @bg;
   columns: 1;
-  lines: 10;
+  lines: 5;
 }
 
 mainbox {
