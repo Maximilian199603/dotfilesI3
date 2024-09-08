@@ -47,6 +47,8 @@ in
     LC_TIME = "de_AT.UTF-8";
   };
 
+  hardware.opengl.enable = true;
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "de";
@@ -64,6 +66,7 @@ in
 		y = 1080;
 	}
   ];
+  services.xeserver.displaymanager.lightdm.greeters.gtk.enable = true;
   services.xserver.windowManager.i3.enable = true;
   programs.i3lock.enable = true;
   services.picom = {
