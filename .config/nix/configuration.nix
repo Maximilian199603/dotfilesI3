@@ -66,7 +66,7 @@ in
 		y = 1080;
 	}
   ];
-  services.xeserver.displaymanager.lightdm.greeters.gtk.enable = true;
+  services.xserver.displayManager.lightdm.greeters.gtk.enable = true;
   services.xserver.windowManager.i3.enable = true;
   programs.i3lock.enable = true;
   services.picom = {
