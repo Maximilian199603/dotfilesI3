@@ -71,7 +71,7 @@ in
   programs.i3lock.enable = true;
   services.picom = {
    enable = true;
-   backend = "glx";
+#   backend = "glx";
   };
 
   hardware.bluetooth.enable = true; # Enables bluetooth support
