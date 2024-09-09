@@ -133,6 +133,8 @@ in
     lxappearance
     wallust
     i3blocks
+    betterlockscreen
+    dunst
     # Gtk Themes
     arc-theme
     # Cursor Themes
@@ -161,7 +163,6 @@ in
     #ncmcpp
     gnupg1orig
     killall
-    betterlockscreen
     inxi
   ] ++ (with unstable-pkgs; [
      
