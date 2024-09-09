@@ -71,13 +71,21 @@ in
   programs.i3lock.enable = true;
   services.picom = {
    enable = true;
-#   backend = "glx";
   };
+  environment.localBinInPath = true;
 
   hardware.bluetooth.enable = true; # Enables bluetooth support
   #hardware.bluetooth.powerOnboot = true; # does not work
   services.blueman.enable = true;
-  environment.localBinInPath = true;
+  sound.enable = true;
+  security.rtkit.enable = true;
+  services.pipewire = {
+  	enable = true;
+	alsa.enable = true;
+	alsa.support32Bit = true;
+	pulse.enable = true;
+	jack.enable = true;
+  };
 
   programs.zsh.enable = true; # enable zsh system wide
   users.defaultUserShell = pkgs.zsh;
