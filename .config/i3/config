@@ -71,7 +71,7 @@ bindsym $mod+p exec "rofi -show power-menu -modi power-menu:rofi-power-menu -the
 #Wallpaper switcher Rofi
 #bindsym $mod+shift+w exec placeholder for wall switcher
 #Bind lockscreen
-bindsym $mod+o exec "i3lock -c 000000"
+bindsym $mod+l exec betterlockscreen -l
 
 # change focus
 bindsym $mod+j focus left
