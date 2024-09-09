@@ -30,5 +30,7 @@ feh --bg-scale "$random_file"
 # Set the colour theme
 #wallust run "$random_file"
 
+# Load the Wallpaper into the lockscreen
+betterlockscreen -u "$random_file"
 echo "Background set to: $random_file"
 
