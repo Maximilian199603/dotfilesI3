@@ -161,6 +161,7 @@ in
     #ncmcpp
     gnupg1orig
     killall
+    betterlockscreen
     inxi
   ] ++ (with unstable-pkgs; [
      
