@@ -67,7 +67,7 @@ in
 	}
   ];
   services.xserver.displayManager.lightdm.greeters.gtk.enable = true;
-  services.xserver.displayManager.lightdm.background = "$HOME/Pictures/Wallpapers/Akiakane-2.jpg";
+  services.xserver.displayManager.lightdm.background = "/$HOME/Pictures/Wallpapers/Akiakane-2.jpg";
   services.xserver.windowManager.i3.enable = true;
   programs.i3lock.enable = true;
   services.picom = {
