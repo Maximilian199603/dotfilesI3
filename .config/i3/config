@@ -218,6 +218,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command SCRIPT_DIR=~/.config/i3blocks/scripts i3blocks 
+	separator_symbol "<200b>"
 }
 
 exec_always random_bg.sh ~/Pictures/Wallpapers
