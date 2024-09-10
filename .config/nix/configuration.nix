@@ -135,7 +135,6 @@ in
     starship
     feh
     lxappearance
-    wallust
     i3blocks
     betterlockscreen
     dunst
@@ -169,7 +168,7 @@ in
     killall
     inxi
   ] ++ (with unstable-pkgs; [
-     
+    wallust
   ]);
 
   nixpkgs.config.permittedInsecurePackages = [
