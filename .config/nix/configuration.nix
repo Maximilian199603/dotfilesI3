@@ -4,9 +4,12 @@
 
 { config, pkgs, ... }:
 
-
 let  
  unstable-pkgs = import <nixpkgs-unstable> {config.allowUnfree = true;};  
+ greeterWallpaper = builtins.path {
+ 	path = "/home/edgelordkirito/Pictures/Wallpapers/Akiakane-2.jpg";
+ 	name = "greeter-Wallpaper";
+};
 in  
 {
   imports =
@@ -67,6 +70,7 @@ in
 	}
   ];
   services.xserver.displayManager.lightdm.greeters.gtk.enable = true;
+  services.xserver.displayManager.lightdm.background = greeterWallpaper;
   services.xserver.windowManager.i3.enable = true;
   programs.i3lock.enable = true;
   services.picom = {
