@@ -161,8 +161,8 @@ in
     tree
     neofetch
     fastfetch
-    ookla-speedtest
     wget
+    speedtest-cli
     bottom
     #ncmcpp
     gnupg1orig
