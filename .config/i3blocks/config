@@ -29,6 +29,12 @@ command=$SCRIPT_DIR/$BLOCK_NAME
 separator_block_width=15
 markup=pango
 
+#Musicplayer
+[mediaplayer]
+#command=$SCRIPT_DIR/mediaplayer/mediaplayer
+instance=vlc,%any,spotify
+interval=5
+signal=10
 # Volume indicator
 #
 # The first parameter sets the step (and units to display)
@@ -44,14 +50,19 @@ color=#eb4034
 signal=10
 #STEP=5%
 
+[volume-pipewire]
+#comand=$SCRIPT_DIR/volume-pipewire/volume-pipewire
+interval=once
+singnal=1
 # Memory usage
 #
 # The type defaults to "mem" if the instance is not specified.
 [memory]
 label=󰍛 
-command=$SCRIPT_DIR/memory/memory
+#command=$SCRIPT_DIR/memory/memory
 separator=false
 interval=30
+separator=true
 
 #[memory]
 #label=SWAP
@@ -77,8 +88,9 @@ interval=30
 [iface]
 #IFACE=wlan0
 color=#00FF00
+#command=$SCRIPT_DIR/iface/iface
 interval=10
-separator=false
+separator=true
 
 [wifi]
 #INTERFACE=wlp3s0
@@ -89,15 +101,17 @@ separator=false
 
 [bandwidth]
 #INTERFACE=eth0
+#command=$SCRIPT_DIR/bandwidth/bandwidth
 interval=5
+#Does not currently work seems to be because of the vm
 
 # CPU usage
 #
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
 [cpu_usage]
-label=CPU
-command=$SCRIPT_DIR/cpu_usage/cpu_usage
+label=CPU  
+#command=$SCRIPT_DIR/cpu_usage/cpu_usage
 interval=10
 min_width=CPU 100.00%
 #separator=false
@@ -108,18 +122,28 @@ interval=10
 
 # Battery indicator
 #
+[battery]
+command=$SCRIPT_DIR/battery/battery
+interval=30
+label=BAT
 # The battery instance defaults to 0.
-#[battery]
-#label=BAT
+[battery-poly]
+#command=$SCRIPT_DIR/battery-poly/battery-poly
+label=BAT
 #label=⚡
-#interval=30
+interval=30
 
 [batterybar]
-command=$SCRIPT_DIR/batterybar/batterybar
+#command=$SCRIPT_DIR/batterybar/batterybar
 label=bat:
 interval=5
 markup=pango
 min_width=bat: ■■■■■
+
+#Keyboard Layout
+[key_layout]
+#command=$SCRIPT_DIR/key_layout/key_layout
+interval=30
 
 # Date Time
 [time]
@@ -130,16 +154,12 @@ STRFTIME_FORMAT=%H:%M %Y-%m-%d
 TZONES=$DEFAULT_TZ,America/Moncton,Asia/Tokyo
 TZ_LABELS=,Amy,Tokyo
 
-# Generic media player support
-#
-# This displays "ARTIST - SONG" if a music is playing.
-# Supported players are: spotify, vlc, audacious, xmms2, mplayer, and others.
-# Set to %any to automatically pick (Requires playerctl >=2.1.1)
-#[mediaplayer]
-# This picks any player, with vlc as first, and spotify as last choice
-#instance=vlc,%any,spotify
-#interval=5
-#signal=10
+#Dunst
+[dunst]
+command=$SCRIPT_DIR/dunst/dunst
+interval=once
+format=json
+markup=pango
 
 # OpenVPN support
 #
