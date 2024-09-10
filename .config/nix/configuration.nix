@@ -170,6 +170,7 @@ in
     inxi
     sysstat
     acpi
+    networkmanager
   ] ++ (with unstable-pkgs; [
     wallust
   ]);
