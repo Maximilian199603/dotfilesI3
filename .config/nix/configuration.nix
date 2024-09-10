@@ -155,6 +155,7 @@ in
     dotnet-sdk_8
     jdk17
     rustup
+    python3
     # ShellApps
     stow
     tree
