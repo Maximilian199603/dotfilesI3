@@ -167,6 +167,8 @@ in
     gnupg1orig
     killall
     inxi
+    sysstat
+    acpi
   ] ++ (with unstable-pkgs; [
     wallust
   ]);
